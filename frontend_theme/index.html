@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="assets/js/tailwind.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        // Extend Tailwind config to use the Google Font
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '240px',
+                    'xsm': '480px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1025px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+
+                },
+                // colors: {
+                //     'Pink': '#ff4980',
+                // },
+                extend: {
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <div id="header"></div>
+    <section class="relative h-[500px] bg-cover bg-center" style="background-image: url('./assets/images/banner.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div> <!-- Overlay -->
+        <div
+            class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full items-center text-center">
+            <h1 class="lg:text-6xl xs:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                We <span class="text-orange-300">increase</span> your conversion rate, or give you a
+                <span class="text-orange-300">full refund</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-6">
+                Full service CRO Agency that guarantees results for online businesses. We turn your
+                website visitors into paying, loyal customers through user testing, data analysis, and our AI-driven
+                software.
+            </p>
+            <div>
+                <button
+                    class="bg-gradient-to-r from-orange-300 to-green-300 text-black font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity justify-center md:w-full lg:w-[269px]">
+                    Talk With Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="lg:max-w-7xl lg:mx-auto lg:mt-20">
+
+        <div>
+            <h1
+                class="lg:text-5xl xs:text-2xl md:text-4xl  font-bold text-black mb-4 text-center font-bold font-roboto">
+                Maximize Every Step of Your Marketing Funnel
+
+            </h1>
+            <p class="text-center font-roboto lg:text-xl">
+                We don't just manage your ad accounts—we provide a full-funnel marketing strategy leveraging the
+                best platforms and services to help you solve your biggest challenges and achieve your goals.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-start  gap-8 lg:mt-20">
+
+
+            <!-- Left Column: Tab Buttons -->
+            <div class="flex flex-col space-y-8 border-r pr-4">
+                <button
+                    class="tab-button font-roboto  font-semibold text-gray-900 text-left border-l-4 border-red-500 pl-4 focus:outline-none lg:text-3xl"
+                    data-target="tab1">
+                    ADVERTISING
+                </button>
+                <button
+                    class="lg:text-2xl font-roboto  tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-orange-300 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab2">
+                    SEARCH ENGINE OPTIMIZATION
+                </button>
+                <button
+                    class="lg:text-2xl font-roboto  tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-orange-300 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab3">
+                    PAID SEARCH
+                </button>
+                <button
+                    class="lg:text-2xl font-roboto  tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-gray-900 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab4">
+                    PAID SOCIAL
+                </button>
+                <button
+                    class="lg:text-2xl font-roboto  tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-gray-900 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab5">
+                    AMAZON MARKETING
+                </button>
+                <button
+                    class="lg:text-2xl font-roboto  tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-gray-900 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab6">
+                    Creative Services
+                </button>
+                <button
+                    class="lg:text-2xl font-roboto  tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-gray-900 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab7">
+                    Email Marketing
+                </button>
+                <button
+                    class="lg:text-2xl tab-button text-gray-600 text-left border-l-4 border-transparent hover:text-gray-900 hover:border-red-500 pl-4 focus:outline-none"
+                    data-target="tab8">
+                    Website optimization
+                </button>
+            </div>
+
+            <!-- Right Column: Tab Content -->
+            <div>
+                <div id="tab1" class="tab-content">
+                    <div class="relative">
+                        <img src="./assets/images/Advertising.webp" class="h-[550px] w-full" alt="Advertising Image"
+                            class="rounded-lg shadow-lg">
+                        <div class="lg:absolute lg:top-[302px] lg:bg-gray-200 p-4">
+                            <h2 class="text-2xl text-black font-bold text-gray-900 mb-4">Maximize Every Step of Your
+                                Marketing Funnel
+                            </h2>
+                            <p class="text-black mb-6">
+                                We don't just manage your ad accounts—we provide a full-funnel marketing strategy
+                                leveraging
+                                the
+                                best platforms
+                                and services to help you solve your biggest challenges and achieve your goals.
+                            </p>
+
+                            <p class="text-black mt-6">
+                                The best marketing strategy in the world will only get you so far without the expertise
+                                to
+                                implement it effectively.
+                                That’s where our top-rated digital marketing services come in.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="tab2" class="tab-content hidden">
+                    <img src="./assets/images/SEO.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Search Engine Optimization</h2>
+                    <p class="text-gray-600 mb-6">Content for SEO tab.</p>
+                </div>
+
+                <div id="tab3" class="tab-content hidden">
+                    <img src="./assets/images/Paid-Search.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Paid Search</h2>
+                    <p class="text-gray-600 mb-6">Content for Paid Search tab.</p>
+                </div>
+                <div id="tab4" class="tab-content hidden">
+                    <img src="./assets/images/Paid-Social.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Paid Search</h2>
+                    <p class="text-gray-600 mb-6">Content for Paid Search tab.</p>
+                </div>
+                <div id="tab5" class="tab-content hidden">
+                    <img src="./assets/images/Image-3.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Paid Search</h2>
+                    <p class="text-gray-600 mb-6">Content for Paid Search tab.</p>
+                </div>
+                <div id="tab6" class="tab-content hidden">
+                    <img src="./assets/images/Creative.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Paid Search</h2>
+                    <p class="text-gray-600 mb-6">Content for Paid Search tab.</p>
+                </div>
+                <div id="tab7" class="tab-content hidden">
+                    <img src="./assets/images/Image-1-1.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Paid Search</h2>
+                    <p class="text-gray-600 mb-6">Content for Paid Search tab.</p>
+                </div>
+                <div id="tab8" class="tab-content hidden">
+                    <img src="./assets/images/Image-7.webp" class="h-[500px]" alt="Advertising Image"
+                        class="rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Paid Search</h2>
+                    <p class="text-gray-600 mb-6">Content for Paid Search tab.</p>
+                </div>
+                <!-- Add more tabs as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footer"></div>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

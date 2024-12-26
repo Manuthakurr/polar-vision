@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header id="header" class="bg-primary text-black py-4 shadow-md">
+        <div class="mx-auto max-w-7xl flex justify-between items-center lg:px-0 sm:px-4">
+            <a href="#" class="text-2xl font-bold">
+                <img src="./assets/images/logo.png" class="h-16" alt="Brand Logo">
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block lg:hidden text-black focus:outline-none">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <!-- Navigation -->
+            <nav id="menu"
+                class="hidden lg:flex flex-col lg:flex-row lg:space-x-4 fixed inset-0 bg-primary z-50 lg:static lg:bg-transparent space-y-4 lg:space-y-0">
+                <button id="close-btn" class="self-end mt-4 mr-4 block lg:hidden">
+                    <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <ul class="text-black flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 px-6 py-8 lg:p-0">
+                    <li><a href="index.html" class="hover:text[#ff4980]">Home</a></li>
+                    <li><a href="about.html" class="hover:text[#]">About</a></li>
+                    <li><a href="services.html" class="hover:text[#ff4980]">Our Services</a></li>
+                    <li><a href="blog.html" class="hover:text[#ff4980]">pricing</a></li>
+                    <li>
+                        <a href="contact.html" class="bg-gradient-to-r from-orange-300 to-green-300 text-black font-semibold py-3 px-6
+                        rounded-lg hover:opacity-90 transition-opacity justify-center">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

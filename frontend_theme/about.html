@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensure bg-primary is defined (e.g., Tailwind's default blue) */
+        :root {
+            --bg-primary: #ffffff;
+            /* Adjust to your brand's primary color */
+        }
+    </style>
+</head>
+
+<body class="font-roboto flex flex-col min-h-screen">
+
+    <!-- Load Header Dynamically -->
+    <div id="header"></div>
+
+    <!-- Main Content for About Us -->
+    <main class="container mx-auto my-8 px-4 flex-grow">
+        <h1 class="text-3xl font-bold mb-4">About Us</h1>
+        <p class="text-lg mb-4">Welcome to our website! We are a dedicated team providing excellent services in the
+            field of accommodation, apartments, rooms, and PGs. Our goal is to make your experience with us easy and
+            hassle-free.</p>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-3">Our Mission</h2>
+            <p class="text-lg">Our mission is to connect people with the perfect accommodation options that suit their
+                needs. Whether you're looking for a flat, a room, or a PG, we strive to provide the best possible
+                experience with seamless booking and reliable customer support.</p>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold mb-3">Our Team</h2>
+            <p class="text-lg">We have a passionate team dedicated to helping you find the best accommodation options.
+                Our experts are here to ensure that your journey with us is smooth and enjoyable.</p>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="assets/images/team1.jpg" alt="Team Member" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-2">John Doe</h3>
+                    <p class="text-lg">CEO</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="assets/images/team2.jpg" alt="Team Member" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-2">Jane Smith</h3>
+                    <p class="text-lg">Marketing Director</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="assets/images/team3.jpg" alt="Team Member" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-2">Michael Lee</h3>
+                    <p class="text-lg">Operations Manager</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>
